@@ -1,0 +1,14 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@{
+    Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml";
+}
+@model MadeToEngageTest.Models.ViewModels.EventListingViewModel
+<div>
+    @foreach (var eventPage in Model.AllEvents)
+    {
+        <div>@eventPage.StartDate - @eventPage.EndDate</div>
+        @Html.PageLink(eventPage.PageLink)
+        <div>@eventPage.Summary</div>
+    }
+</div>

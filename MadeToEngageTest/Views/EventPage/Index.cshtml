@@ -1,0 +1,15 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@model PageViewModel<EventPage>
+<div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.Summary)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.Description)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.Title)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.Speaker)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.NoAttendees)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.StartDate)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.EndDate)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.EventImage)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.AdditionalContent)</div>
+    <div> @Html.PropertyFor(x => x.CurrentPage.Status)</div>
+</div>
